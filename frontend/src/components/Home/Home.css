@@ -1,0 +1,32 @@
+.Home {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  grid-template-rows: 1;
+}
+
+.Home-left {
+  grid-column: 1 / 2;
+  margin-top: 15px;
+
+}
+
+.Home-right {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30%;
+  grid-column: 2 / 3;
+}
+
+.custom-scrollbars__content {
+  position: sticky;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scrollbars__content::-webkit-scrollbar {
+  display: none;
+}
