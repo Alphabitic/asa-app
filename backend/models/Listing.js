@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const ListingSchema = new Schema({
   title: { type: String, required: true },
-  descrption: { type: String, required: true },
+  descrption: { type: String, required: false },
   jobType: { type: String, required: true },
   maxApps: { type: Number, required: true },
   numApps: { type: Number, required: true, default: 0 },

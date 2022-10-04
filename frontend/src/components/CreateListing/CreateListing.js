@@ -119,7 +119,7 @@ function CreateListing() {
     axios
       .post(url, data, config)
       .then((response) => {
-  setFormData(response.data.listing);
+  //setFormData(response.data.listing);
         swal("Annonce créée avec succès", "", "success");
       })
       .catch((error) => {
@@ -194,9 +194,9 @@ function CreateListing() {
                 onChange={onChangeHandler}
                 label="Type"
               >
-                <MenuItem value="Full Time">Temps plein</MenuItem>
-                <MenuItem value="Part Time">Temps partiel</MenuItem>
-                <MenuItem value="WFH">Freelance</MenuItem>
+                <MenuItem value="Temps plein">Temps plein</MenuItem>
+                <MenuItem value="Temps partiel">Temps partiel</MenuItem>
+                <MenuItem value="Freelance">Freelance</MenuItem>
               </Select>
             </FormControl>
             <FormControl variant="outlined" className="FormElement">
