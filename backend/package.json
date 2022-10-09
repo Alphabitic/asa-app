@@ -8,7 +8,7 @@
         "install-client": "cd client && npm install",
         "server": "nodemon server.js",
         "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-        "start": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run start --prefix frontend\""
+        "start": "nodemon server.js"
   },
   "author": "Zola Andria",
   "license": "ISC",
